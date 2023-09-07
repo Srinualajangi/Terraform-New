@@ -11,7 +11,7 @@ variable "sg_name" {
 }
 
 variable "sg_cidr" {
-    type = "list"
+    type = list
     default = ["0.0.0.0/0"]
   
 }
