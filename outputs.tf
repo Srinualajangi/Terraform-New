@@ -1,4 +1,4 @@
-output "public_ip" {
+output "publicip" {
     value = aws_instance.TF-testing.public_ip
   
 }
