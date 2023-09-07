@@ -1,5 +1,7 @@
 resource "aws_instance" "TF-testing" {
-    ami = "ami-03265a0778a880afb"
+    ami = var.ami_id
     instance_type = "t2.micro"
+    tags = var.tags
   
 }
+    
