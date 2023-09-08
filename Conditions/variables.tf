@@ -3,7 +3,7 @@ variable "ami_id" {
 }
 
 variable "instance_name" {
-    default = "MongoDB"
+    default = "Mongodb"
   
 }
 
@@ -24,11 +24,11 @@ variable "sg_cidr" {
 variable "tags" {
     type = map
     default = {
-      Name = "cart service"
+      Name = "Mongodb"
         Environment   = "DEV"
         terraform     = "true"
         Project       = "Roboshop"
-        Component     = "cart"  
+        Component     = "Mongodb"  
     }
   
 }
