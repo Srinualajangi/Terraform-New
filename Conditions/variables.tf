@@ -3,7 +3,7 @@ variable "ami_id" {
 }
 
 variable "instance_name" {
-    default = "cart"
+    default = "MongoDB"
   
 }
 
