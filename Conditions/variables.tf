@@ -24,7 +24,7 @@ variable "sg_cidr" {
 variable "tags" {
     type = map
     default = {
-      Name = "cart"
+      Name = "cart service"
         Environment   = "DEV"
         terraform     = "true"
         Project       = "Roboshop"
