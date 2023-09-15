@@ -15,3 +15,14 @@ resource "aws_route53_record" "record" {
     records = [aws_instance.count[count.index].private_ip]
 
 }
+resource "aws_key_pair" "deployer" {
+    key_name = "devops-pub"
+    public_key = file("${path.module}/devops.pub")
+  
+}
+
+resource "aws_instance" "file-function" {
+  ami = var.ami_id #devops-practice in us-east-1
+  instance_type = "t2.micro"
+  key_name = aws_key_pair.deployer.key_name
+}
